@@ -3,3 +3,39 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --maincolor: #5a5766;
+  --higlightcolor: #867cac;
+  --secondarycolor: #48435c;
+  --bakgroundcolor: #f4f3f6;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 1em;
+  right: 50%;
+  transform: translate(50%);
+}
+
+nav > div {
+  display: flex;
+  gap: 1em;
+  background-color: var(--maincolor);
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+}
+
+section {
+  height: 100vh;
+  background-color: var(--bakgroundcolor);
+}
+
+#hero {
+  background: url("/images/rainy-background.jpg") center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
