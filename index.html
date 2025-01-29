@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="app.js" type="module"></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portoflio</title>
+    <title>Portfolio</title>
   </head>
   <body>
-    <nav>
-      <div>
-        <button type="button" id="HomeBtn">Hjem</button>
-        <button type="button" id="AboutBtn">Om meg</button>
-        <button type="button" id="ProjectsBtn">Prosjekter</button>
-        <button type="button" id="ContactBtn">Kontakt</button>
-      </div>
+    <nav id="navbar">
+      <a href="#hero" id="home-btn" class="main-font">Hjem</a>
+      <a href="#about" id="about-btn" class="main-font">Om meg</a>
+      <a href="#projects" id="projects-btn" class="main-font">Prosjekter</a>
+      <button type="button" id="contact-btn" class="main-font">Kontakt</button>
     </nav>
     <section id="hero">
-      <div id="heroText">
-        <h1>Hei, jeg heter Erlend!</h1>
-        <p>
+      <div id="background-blur"></div>
+      <div id="text-container">
+        <h1 class="main-font">Hei, jeg heter Erlend!</h1>
+        <p class="main-font">
           Jeg er en fullstack-utvikler. Med praktisk erfaring fra både design og
           utvikling, er jeg nå på jakt etter en praksisplass for å styrke
           ferdighetene mine ytterligere.
         </p>
       </div>
-      <button type="button" id="CTABtn">↓ Mer om meg</button>
+      <button type="button" id="cta-btn" class="main-font">↓ Mer om meg</button>
     </section>
     <section id="about">
-      <h2>Om meg</h2>
-      <div id="aboutText">
-        <p>
+      <h2 class="main-font">Om meg</h2>
+      <div id="about-text">
+        <p class="main-font">
           Jeg er en fullstack-utvikler som nylig har fullført kurset Kodehode,
           hvor jeg har spesialisert meg innen HTML, CSS, JavaScript, React og
           Figma. Med praktisk erfaring fra både design og utvikling, er jeg nå
           på jakt etter en praksisplass for å styrke ferdighetene mine
           ytterligere.
         </p>
-        <p>
+        <p class="main-font">
           I fritiden liker jeg å dykke ned i videospill, bøker og serier, og jeg
           ser fram til å bringe nysgjerrigheten og dedikasjonen min inn i nye
           utfordringer i utviklingsverdenen!!
         </p>
-        <p>
+        <p class="main-font">
           Fra tidligere arbeid på et gaming-senter er jeg vant til å feilsøke og
           løse tekniske problemer raskt og effektivt. I tillegg har jeg ett års
           erfaring med spilldesign fra folkehøgskole, hvor jeg lærte betydningen
           av godt samarbeid og teamarbeid i kreative prosjekter.
         </p>
       </div>
-      <div id="skillsContainer">
-        <h3>Mine ferdigheter</h3>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+      <h3 class="main-font">Mine ferdigheter</h3>
+      <div id="skills-container">
+        <div>
+          <img src="/images/vscode-icons--file-type-html.svg" alt="HTML Ikon" />
+          <p>HTML</p>
+        </div>
+        <div>
+          <img src="/images/devicon--css3.svg" alt="CSS Ikon" />
+          <p>CSS</p>
+        </div>
+        <div>
+          <img
+            src="/images/skill-icons--javascript.svg"
+            alt="JavaScript Icon"
+          />
+          <p>JavaScript</p>
+        </div>
+        <div>
+          <img src="/images/devicon--react.svg" alt="React Icon" />
+          <p>React</p>
+        </div>
+        <div>
+          <img src="/images/devicon--figma.svg" alt="Figma Icon" />
+          <p>Figma</p>
+        </div>
       </div>
     </section>
     <section id="projects">
-      <h2>Prosjekter</h2>
-      <div id="projectContainer"></div>
+      <h2 class="main-font">Prosjekter</h2>
+      <div id="project-container"></div>
     </section>
     <footer></footer>
     <dialog>
-      <h3>Kontakt:</h3>
+      <h3 class="main-font">Kontakt:</h3>
     </dialog>
   </body>
 </html>

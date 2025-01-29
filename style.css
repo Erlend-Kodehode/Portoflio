@@ -6,36 +6,120 @@
 
 :root {
   --maincolor: #5a5766;
-  --higlightcolor: #867cac;
+  --highlightcolor: #867cac;
   --secondarycolor: #48435c;
   --bakgroundcolor: #f4f3f6;
 }
 
+html {
+  scroll-behavior: smooth;
+  background-color: var(--primarycolor);
+}
+
 nav {
   display: flex;
+  justify-content: space-between;
   position: fixed;
   top: 1em;
   right: 50%;
   transform: translate(50%);
-}
-
-nav > div {
-  display: flex;
-  gap: 1em;
   background-color: var(--maincolor);
   border-radius: 15px;
-  padding: 0.5rem 1rem;
+  padding: 0.5em 3em;
+  width: 80vw;
+  z-index: 2;
+}
+
+nav > * {
+  background-color: var(--maincolor);
+  border: none;
+  padding: 0.5em;
+  color: white;
+  font-size: 1.1em;
+  text-decoration: none;
 }
 
 section {
   height: 100vh;
   background-color: var(--bakgroundcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
 }
 
 #hero {
   background: url("/images/rainy-background.jpg") center/cover;
   display: flex;
+}
+
+#text-container {
+  background-color: var(--maincolor);
+  height: 50%;
+  aspect-ratio: 3/2;
+  border-radius: 15px;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 2em;
+}
+
+#text-container > h1 {
+  color: var(--bakgroundcolor);
+  font-size: 3em;
+}
+
+#text-container > p {
+  font-size: 1.3em;
+}
+
+/* #background-blur {
+  filter: blur(20px);
+  background: url("/images/rainy-background.jpg") center/100vw;
+
+  height: 50%;
+  aspect-ratio: 2/1;
+  position: absolute;
+  border-radius: 20px;
+} */
+
+#cta-btn {
+  z-index: 1;
+}
+
+#about-text {
+  width: 70%;
+  background-color: var(--maincolor);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  gap: 1em;
+}
+
+#skills-container {
+  display: flex;
+  gap: 2em;
+}
+
+#skills-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+#skills-container > div > img {
+  height: 4em;
+}
+.highlighted {
+  border-bottom: var(--highlightcolor) 2px solid;
+}
+
+#project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
 }
