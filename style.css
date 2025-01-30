@@ -27,14 +27,14 @@ nav {
   border-radius: 15px;
   padding: 0.5em 3em;
   width: 80vw;
-  z-index: 2;
+  z-index: 3;
 }
 
 nav > * {
   background-color: var(--maincolor);
   border: none;
   padding: 0.5em;
-  color: white;
+  color: var(--bakgroundcolor);
   font-size: 1.1em;
   text-decoration: none;
 }
@@ -122,4 +122,55 @@ section {
 #project-container {
   display: grid;
   grid-template-columns: repeat(2, 50%);
+  gap: 1em;
+  justify-content: center;
+}
+
+#project-container > div {
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 25em;
+  aspect-ratio: 12/7;
+}
+
+#project-container > div > img {
+  width: 25em;
+}
+
+.tech-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--highlightcolor);
+  padding: 0.5em;
+  border-top-left-radius: 10px;
+  display: flex;
+  gap: 0.3em;
+  z-index: 2;
+}
+
+.tech-container > img {
+  height: 1.25em;
+}
+
+.project-desc {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--secondarycolor);
+  color: var(--bakgroundcolor);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+.project-desc > p {
+  text-align: center;
 }

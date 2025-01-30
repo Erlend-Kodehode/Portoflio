@@ -1,7 +1,7 @@
 export default projects = [
   {
     title: "Drumkit",
-    image: "",
+    image: "Drumkit.png",
     desc: "En enkel drumkit med gjenbindbare knapper laget i Javascript",
     tech: [
       "vscode-icons--file-type-html.svg",
@@ -11,13 +11,13 @@ export default projects = [
   },
   {
     title: "Møbel nettside",
-    image: "",
+    image: "Furniture-Website.png",
     desc: "En fiksjonell møbel nettside designet i Figma",
     tech: ["devicon--figma.svg"],
   },
   {
     title: "Hyrule Compendium",
-    image: "",
+    image: "Hyrule-compendium.png",
     desc: "Viser informasjon om objekter fra spillet: The Legend of Zelda: Breath of the Wild ved hjelp av en Api",
     tech: [
       "vscode-icons--file-type-html.svg",
@@ -27,7 +27,7 @@ export default projects = [
   },
   {
     title: "Ønskelister for Julenissen",
-    image: "",
+    image: "Wishlists.png",
     desc: "En visning av ønskelister skrevet til julenissen laget i React",
     tech: [
       "vscode-icons--file-type-html.svg",
