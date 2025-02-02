@@ -133,12 +133,12 @@ section {
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 25em;
+  width: 26em;
   aspect-ratio: 12/7;
 }
 
 #project-container > div > img {
-  width: 25em;
+  width: 100%;
 }
 
 .tech-container {
@@ -173,4 +173,7 @@ section {
 
 .project-desc > p {
   text-align: center;
+}
+.project-desc > h3 {
+  font-size: 2em;
 }
