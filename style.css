@@ -62,8 +62,8 @@ section {
 }
 
 #hero {
-  background: url("./images/rainy-background.jpg") center/cover;
   display: flex;
+  background: url("./images/rainy-background.jpg") center/cover;
 }
 
 #text-container {
@@ -99,8 +99,8 @@ section {
 }
 
 #background-blur {
-  filter: blur(10px);
   background: url("./images/rainy-background.jpg") center/100vw;
+  filter: blur(10px);
 
   height: 70%;
   aspect-ratio: 6/5;
