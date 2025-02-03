@@ -62,8 +62,11 @@ section {
 }
 
 #hero {
+  /* background: url("./images/rainy-background.jpg") center/cover; */
+  background-image: url("./images/rainy-background.jpg");
+  background-position: center;
+  background-size: cover;
   display: flex;
-  background: url("./images/rainy-background.jpg") center/cover;
 }
 
 #text-container {
@@ -99,7 +102,10 @@ section {
 }
 
 #background-blur {
-  background: url("./images/rainy-background.jpg") center/100vw;
+  /* background: url("./images/rainy-background.jpg") center/100vw; */
+  background-image: url("./images/rainy-background.jpg");
+  background-position: center;
+  background-size: 100vw;
   filter: blur(10px);
 
   height: 70%;
