@@ -1,4 +1,4 @@
-export default projects = [
+const projects = [
   {
     title: "Drumkit",
     image: "Drumkit.png",
@@ -60,3 +60,4 @@ export default projects = [
       tech: [],
     }, */
 ];
+export default projects;
