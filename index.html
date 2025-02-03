@@ -3,6 +3,12 @@
   <head>
     <script src="app.js" type="module"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
@@ -24,54 +30,56 @@
           ferdighetene mine ytterligere.
         </p>
       </div>
-      <button type="button" id="cta-btn" class="main-font">↓ Mer om meg</button>
+      <a href="#about" id="cta-btn" class="main-font">↓ Mer om meg</a>
     </section>
     <section id="about">
       <h2 class="main-font">Om meg</h2>
-      <div id="about-text">
-        <p class="main-font">
-          Jeg er en fullstack-utvikler som nylig har fullført kurset Kodehode,
-          hvor jeg har spesialisert meg innen HTML, CSS, JavaScript, React og
-          Figma. Med praktisk erfaring fra både design og utvikling, er jeg nå
-          på jakt etter en praksisplass for å styrke ferdighetene mine
-          ytterligere.
-        </p>
-        <p class="main-font">
-          I fritiden liker jeg å dykke ned i videospill, bøker og serier, og jeg
-          ser fram til å bringe nysgjerrigheten og dedikasjonen min inn i nye
-          utfordringer i utviklingsverdenen!!
-        </p>
-        <p class="main-font">
-          Fra tidligere arbeid på et gaming-senter er jeg vant til å feilsøke og
-          løse tekniske problemer raskt og effektivt. I tillegg har jeg ett års
-          erfaring med spilldesign fra folkehøgskole, hvor jeg lærte betydningen
-          av godt samarbeid og teamarbeid i kreative prosjekter.
-        </p>
+      <div id="about-border">
+        <div id="about-text">
+          <p class="main-font">
+            Jeg er en fullstack-utvikler som nylig har fullført kurset Kodehode,
+            hvor jeg har spesialisert meg innen HTML, CSS, JavaScript, React og
+            Figma. Med praktisk erfaring fra både design og utvikling, er jeg nå
+            på jakt etter en praksisplass for å styrke ferdighetene mine
+            ytterligere.
+          </p>
+          <p class="main-font">
+            I fritiden liker jeg å dykke ned i videospill, bøker og serier, og
+            jeg ser fram til å bringe nysgjerrigheten og dedikasjonen min inn i
+            nye utfordringer i utviklingsverdenen!!
+          </p>
+          <p class="main-font">
+            Fra tidligere arbeid på et gaming-senter er jeg vant til å feilsøke
+            og løse tekniske problemer raskt og effektivt. I tillegg har jeg ett
+            års erfaring med spilldesign fra folkehøgskole, hvor jeg lærte
+            betydningen av godt samarbeid og teamarbeid i kreative prosjekter.
+          </p>
+        </div>
       </div>
       <h3 class="main-font">Mine ferdigheter</h3>
       <div id="skills-container">
         <div>
           <img src="/images/vscode-icons--file-type-html.svg" alt="HTML Ikon" />
-          <p>HTML</p>
+          <p class="main-font">HTML</p>
         </div>
         <div>
           <img src="/images/devicon--css3.svg" alt="CSS Ikon" />
-          <p>CSS</p>
+          <p class="main-font">CSS</p>
         </div>
         <div>
           <img
             src="/images/skill-icons--javascript.svg"
             alt="JavaScript Icon"
           />
-          <p>JavaScript</p>
+          <p class="main-font">JavaScript</p>
         </div>
         <div>
           <img src="/images/devicon--react.svg" alt="React Icon" />
-          <p>React</p>
+          <p class="main-font">React</p>
         </div>
         <div>
           <img src="/images/devicon--figma.svg" alt="Figma Icon" />
-          <p>Figma</p>
+          <p class="main-font">Figma</p>
         </div>
       </div>
     </section>
@@ -80,8 +88,33 @@
       <div id="project-container"></div>
     </section>
     <footer></footer>
-    <dialog>
-      <h3 class="main-font">Kontakt:</h3>
+    <dialog id="contact-info">
+      <div>
+        <img src="/images/akar-icons--cross.svg" alt="cross icon" />
+        <h3 class="main-font">Kontakt:</h3>
+        <div>
+          <p class="main-font">Email:</p>
+          <a
+            href="mailto:erlendk.kodehode@gmail.com"
+            class="main-font contact-link"
+            >erlendk.kodehode@gmail.com</a
+          >
+        </div>
+        <a
+          href="https://github.com/Erlend-Kodehode/"
+          class="main-font contact-link"
+          ><img src="/images/mdi--github.svg" alt="Github Logo" />Github</a
+        >
+        <a
+          href="/files/CV-Erlend.Kaarigstad.pdf"
+          class="main-font contact-link"
+          download
+          ><img
+            src="/images/material-symbols--download.svg"
+            alt="Download Icon"
+          />CV</a
+        >
+      </div>
     </dialog>
   </body>
 </html>
