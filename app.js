@@ -66,7 +66,6 @@ projects.forEach(({ image, title, desc, tech, links }) => {
   });
   techContainer.classList.add("tech-container");
   projectInfo.append(projectTitle, projectDesc);
-  // projectHover.append(links.figma ? figmaBtn : (gitRepBtn, gitPagesBtn));
   projectBox.append(projectImg, projectInfo, techContainer, projectHover);
   projectContainer.append(projectBox);
 });

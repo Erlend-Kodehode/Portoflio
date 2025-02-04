@@ -53,11 +53,5 @@ const projects = [
       pages: "https://erlend-kodehode.github.io/React-Prosjekt-Onskelister/",
     },
   },
-  /*   {
-      title: "",
-      image: "",
-      desc: "",
-      tech: [],
-    }, */
 ];
 export default projects;

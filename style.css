@@ -66,7 +66,6 @@ section + section {
 }
 
 #hero {
-  /* background: url("./images/rainy-background.jpg") center/cover; */
   background-image: url("./images/rainy-background.jpg");
   background-position: center;
   background-size: cover;
@@ -74,7 +73,6 @@ section + section {
 }
 
 #text-container {
-  /* background-color: var(--maincolor); */
   background-image: linear-gradient(
     to top left,
     #5a5766cc,
@@ -93,8 +91,6 @@ section + section {
   color: var(--bakgroundcolor);
   z-index: 1;
   text-align: center;
-  /* text-shadow: 2px 2px var(--maincolor); */
-  /* background-color: #5a576634; */
 }
 
 #text-container > h1 {
@@ -106,7 +102,6 @@ section + section {
 }
 
 #background-blur {
-  /* background: url("./images/rainy-background.jpg") center/100vw; */
   background-image: url("./images/rainy-background.jpg");
   background-position: center;
   background-size: 100vw;
@@ -131,15 +126,15 @@ section + section {
 }
 
 #about-border {
-  width: 80%;
+  max-width: 80em;
   height: 50%;
   border-radius: 10px;
   background-image: linear-gradient(to top left, #8a80b0, #aca0db);
-  /* background-color: black; */
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 7px 10px 10px 5px var(--shadowcolor);
+  margin: 0 5em;
 }
 
 #about-text {
@@ -153,7 +148,7 @@ section + section {
   justify-content: center;
   padding: 3em;
   gap: 1em;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 #skills-container {
@@ -184,7 +179,8 @@ section + section {
   grid-template-columns: repeat(2, 50%);
   gap: 2em;
   justify-content: center;
-  width: 55%;
+  max-width: 70em;
+  margin: 5em;
 }
 
 #project-container > div {
@@ -236,17 +232,19 @@ section + section {
 .project-desc > p {
   text-align: center;
 }
+
 .project-desc > h3 {
   font-size: 1.5em;
 }
 
 #contact-info {
-  top: 10%;
-  left: 79%;
+  position: fixed;
+  top: 8%;
+  margin-left: auto;
+  margin-right: 2%;
   background-color: var(--maincolor);
   border-radius: 10px;
   border: none;
-  width: 20%;
   color: var(--bakgroundcolor);
 }
 
@@ -300,4 +298,93 @@ section + section {
   text-decoration: none;
   font-size: 1em;
   gap: 0.5em;
+}
+
+@media only screen and (max-width: 900px) {
+  #project-container > div {
+    aspect-ratio: 1/1;
+  }
+  .project-desc {
+    height: 53%;
+    gap: 1em;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .project-desc > h3 {
+    font-size: 1.25em;
+  }
+  #about-text {
+    padding: 2em;
+  }
+  #about-border {
+    height: 60%;
+  }
+  #text-container {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .project-desc > h3 {
+    font-size: 1em;
+  }
+  .project-desc {
+    height: 69%;
+  }
+  /* TODO GRID ADJUSTMENT */
+  /* TODO Hover git buttons */
+  #project-container > div {
+    aspect-ratio: 3/4;
+  }
+
+  #about-text {
+    padding: 1em;
+    gap: 0.25em;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .project-desc {
+    height: 77%;
+  }
+  #about-border {
+    height: 70%;
+  }
+
+  #project-container > div {
+    aspect-ratio: 1/2;
+  }
+
+  #text-container {
+    width: 80%;
+  }
+
+  section {
+    gap: 1em;
+  }
+  nav {
+    font-size: 0.8em;
+    right: 55%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #skills-container {
+    gap: 1em;
+  }
+  #skills-container img {
+    width: 3em;
+  }
+  #about-border {
+    height: 90%;
+  }
+  #about-text {
+    font-size: 0.9em;
+  }
+  nav {
+    right: 65%;
+    padding: 0.5em 1em;
+  }
 }
