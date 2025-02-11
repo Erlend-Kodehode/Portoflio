@@ -58,7 +58,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2em;
+  gap: 1.5em;
 }
 
 section + section {
@@ -125,10 +125,9 @@ section + section {
   text-align: center;
 }
 
-/* TODO max width */
 #about-border {
   max-width: 80em;
-  height: 50%;
+  height: 55%;
   border-radius: 10px;
   background-image: linear-gradient(to top left, #8a80b0, #aca0db);
   display: flex;
@@ -180,7 +179,7 @@ section + section {
   grid-template-columns: repeat(2, 50%);
   gap: 2em;
   justify-content: center;
-  max-width: 70em;
+  max-width: 50em;
   margin: 0 5em;
 }
 
