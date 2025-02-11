@@ -130,6 +130,7 @@ section + section {
   text-align: center;
 }
 
+/* TODO max width */
 #about-border {
   width: 80%;
   height: 50%;
