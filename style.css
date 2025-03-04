@@ -368,6 +368,7 @@ section + section {
 
   #text-container {
     width: 60%;
+    height: 50%;
   }
   #background-blur {
     width: 100vw;
