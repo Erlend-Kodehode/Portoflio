@@ -76,13 +76,22 @@ let hoveringLink = false;
 
 conactBtn.addEventListener("click", () => {
   contactInfo.showModal();
+  contactInfo.classList.toggle("contact-slide-inn");
   document.body.addEventListener("mousedown", closeModal);
 });
+
 function closeModal() {
   if (hoveringLink) return;
   document.body.removeEventListener("mousedown", closeModal);
-  contactInfo.close();
+  contactInfo.classList.toggle("contact-slide-inn");
+  contactInfo.classList.toggle("contact-slide-out");
 }
+
+contactInfo.addEventListener("animationend", (e) => {
+  if (e.animationName !== "slide-out") return;
+  contactInfo.close();
+  contactInfo.classList.toggle("contact-slide-out");
+});
 
 const links = document.getElementsByClassName("contact-link");
 

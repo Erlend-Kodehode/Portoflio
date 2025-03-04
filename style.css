@@ -248,6 +248,32 @@ section + section {
   color: var(--bakgroundcolor);
 }
 
+.contact-slide-inn {
+  animation: slide-inn 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+@keyframes slide-inn {
+  from {
+    margin-right: -30%;
+  }
+  to {
+    margin-right: 2%;
+  }
+}
+
+.contact-slide-out {
+  animation: slide-out 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+@keyframes slide-out {
+  from {
+    margin-right: 2%;
+  }
+  to {
+    margin-right: -30%;
+  }
+}
+
 #contact-info > div > img {
   position: absolute;
   top: 1em;
