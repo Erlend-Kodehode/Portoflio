@@ -153,7 +153,10 @@ section + section {
 
 #skills-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2em;
+  padding: 1em;
 }
 
 #skills-container > div {
@@ -343,14 +346,15 @@ section + section {
   #about-text {
     padding: 2em;
   }
-  #about-border {
-    height: 60%;
-  }
+
   #text-container {
     width: 60%;
   }
   #background-blur {
     width: 100vw;
+  }
+  #about-border {
+    margin: 0 4em;
   }
 }
 
@@ -366,10 +370,13 @@ section + section {
     aspect-ratio: 3/4;
   }
 
+  #about-border {
+    height: 60%;
+  }
+
   #about-text {
     padding: 1em;
     gap: 0.25em;
-    font-size: 1em;
   }
   .project-hover {
     flex-direction: column;
@@ -381,9 +388,11 @@ section + section {
     height: 77%;
   }
   #about-border {
-    height: 70%;
+    margin: 0 2em;
   }
-
+  #about-text {
+    font-size: 1.1em;
+  }
   #project-container {
     display: flex;
     flex-direction: column;
@@ -423,9 +432,6 @@ section + section {
   #skills-container img {
     width: 3em;
   }
-  #about-border {
-    height: 90%;
-  }
   .project-desc {
     height: 70%;
     gap: 0.25em;
@@ -437,12 +443,15 @@ section + section {
     height: 90%;
     width: 95vw;
   }
-  ct-container > div {
+  #project-container > div {
     height: 50%;
     width: 70%;
   }
   #about-text {
-    font-size: 0.9em;
+    font-size: 1em;
+  }
+  #about-border {
+    margin: 0 1em;
   }
   nav {
     padding: 0.5em 1em;
