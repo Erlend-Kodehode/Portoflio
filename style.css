@@ -104,7 +104,7 @@ section + section {
 #background-blur {
   background-image: url("./images/rainy-background.jpg");
   background-position: center;
-  background-size: 100vh;
+  background-size: 100vw;
   filter: blur(10px);
 
   height: 70%;
@@ -123,6 +123,9 @@ section + section {
   text-decoration: none;
   box-shadow: 2px 5px 10px 5px var(--shadowcolor);
   text-align: center;
+  &:hover {
+    background-color: #bcc0c6;
+  }
 }
 
 #about-border {
@@ -299,6 +302,9 @@ section + section {
   display: flex;
   align-items: center;
   gap: 0.5em;
+  &:hover {
+    color: #bc8de4;
+  }
 }
 
 #contact-info a p {
@@ -315,6 +321,12 @@ section + section {
   justify-content: center;
   align-items: center;
   gap: 1em;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.project-appear {
+  opacity: 1;
 }
 
 .project-hover > a {
@@ -327,6 +339,9 @@ section + section {
   text-decoration: none;
   font-size: 1em;
   gap: 0.5em;
+  &:hover {
+    background-color: #383838;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -336,6 +351,10 @@ section + section {
   .project-desc {
     height: 53%;
     gap: 1em;
+  }
+  #text-container {
+    width: 60%;
+    height: 30%;
   }
 }
 

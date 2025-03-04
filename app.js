@@ -14,11 +14,12 @@ const projectContainer = document.querySelector("#project-container");
 projects.forEach(({ image, title, desc, tech, links }) => {
   const projectBox = document.createElement("div");
   const projectHover = document.createElement("div");
+  projectHover.classList.add("project-hover");
   projectBox.addEventListener("mouseenter", () =>
-    projectHover.classList.add("project-hover")
+    projectHover.classList.add("project-appear")
   );
   projectBox.addEventListener("mouseleave", () =>
-    projectHover.classList.remove("project-hover")
+    projectHover.classList.remove("project-appear")
   );
 
   if (links.figma) {
