@@ -1,5 +1,20 @@
 const projects = [
   {
+    title: "Booklist",
+    image: "Booklist.png",
+    desc: "Henter og viser informasjon om bøker fra en API ved hjelp av routing",
+    tech: [
+      "vscode-icons--file-type-html.svg",
+      "devicon--css3.svg",
+      "skill-icons--javascript.svg",
+      "devicon--react.svg",
+    ],
+    links: {
+      rep: "https://github.com/Erlend-Kodehode/Gutendex-App",
+      pages: "https://erlend-kodehode.github.io/Gutendex-App/",
+    },
+  },
+  {
     title: "Drumkit",
     image: "Drumkit.png",
     desc: "En enkel drumkit med gjenbindbare knapper laget i Javascript",
@@ -13,7 +28,7 @@ const projects = [
       pages: "https://erlend-kodehode.github.io/drumkit-assignment/",
     },
   },
-  {
+  /*   {
     title: "Møbel nettside",
     image: "Furniture-Website.png",
     desc: "En fiksjonell møbel nettside designet i Figma",
@@ -22,7 +37,7 @@ const projects = [
       figma:
         "https://www.figma.com/design/zjKCZInutX8OEv7wLd7SS3/Figma-Advanced?node-id=0-1&t=LTRRNMISG9MBBEk9-1",
     },
-  },
+  }, */
   {
     title: "Hyrule Compendium",
     image: "Hyrule-compendium.png",
